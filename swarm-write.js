@@ -10,7 +10,6 @@ feed.on("ready", function() {
     swarm = hyperdiscovery(feed)
     swarm.on("connection", function(peer, type) {
         console.log("we had a connection")
-        console.log(peer.key.toString("hex"))
     })
 })
   
